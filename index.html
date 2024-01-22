@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="max-w-[1170px] mx-auto font-manrope">
+        <nav class=" mb-16">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content text-[#707070] mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</h1>
+                    </div>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal font-bold px-1">
+                        <li><a class=" text-[#FF4240] ">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class=" text-[#424247] ">About <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class=" text-[#424247] ">Pages <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class=" text-[#424247] ">Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a class=" text-[#424247] ">Contact<i class="fa-solid fa-chevron-right"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <img src="Images/Frame.svg" alt="">
+                    <a class="btn bg-btn-color font-semibold text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <section class="lg:relative">
+            <div class="carousel">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-100% max-h-[550px]" />
+                    <div
+                        class="absolute flex justify-between  transform -translate-y-1/2 gap-4 bottom-0 lg:bottom-6 left-[37%] lg:left-6">
+                        <a href="#slide2" class="btn text-white h-6 w-12 border-0 rounded-full bg-black">❮</a>
+                        <a href="#slide2" class="btn text-white h-6 w-12 border-0 rounded-full bg-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full max-h-[550px]" />
+                    <div
+                        class="absolute flex  justify-between transform -translate-y-1/2  gap-4 bottom-0 lg:bottom-6 left-[37%] lg:left-6">
+                        <a href="#slide1" class="btn text-white h-6 w-12 border-0 rounded-full bg-black">❮</a>
+                        <a href="#slide1" class="btn text-white h-6 w-12 border-0 rounded-full bg-black">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:absolute mt-4 max-w-[500px] lg:bottom-[5%] lg:right-[5%] p-8 bg-[#131318] rounded-2xl">
+                <h2 class="text-2xl text-white font-extrabold mb-4">Meet all the heroes from the field</h2>
+                <p class="font-medium  text-[#707070]">Embodied in every stitch, our hockey club banner proudly
+                    waves, a tapestry of
+                    passion, teamwork,
+                    and the relentless pursuit of victory on the icy battlefield</p>
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
