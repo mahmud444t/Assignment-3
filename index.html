@@ -21,6 +21,13 @@
             padding: 0;
             margin: 0;
         }
+
+        .footer>* {
+            display: grid;
+            place-items: start;
+            gap: 0.5rem;
+            justify-items: center;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -153,7 +160,7 @@
 
             </div>
         </section>
-        <section class="max-w-[1170px] mx-auto font-manrope text-center mb-16  lg:mb-24">
+        <section class="max-w-[1170px] mx-auto font-manrope  mb-16  lg:mb-24">
             <div class=" py-8 border-y-2 border-dashed text-center mb-12">
                 <h1 class="font-extrabold text-4xl text-[#131318] mb-6">Program Sections</h1>
                 <p class="text-[#424247] max-w-[600px]  mx-auto">Select program of your choice and let's get strong and
@@ -173,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl image-full">
+                <div class="card bg-base-100 shadow-xl image-full ">
                     <figure><img src="Images/3.png" /></figure>
                     <div class="card-body pt-16 md:pt-56">
                         <h2 class="card-title ">Teenager Program</h2>
@@ -419,8 +426,8 @@
         </section>
     </main>
     <footer
-        class=" flex flex-col lg:flex-row gap-8 lg:gap-36 footer  p-8 lg:p-24 text-center md:text-left text-white bg-[#131318] text-base-content font-manrope ">
-        <aside class="space-y-4 flex-1  w-full">
+        class=" grid grid-cols-2  gap-8 lg:gap-36 footer  p-8 lg:p-24  md:text-left text-white bg-[#131318] text-base-content font-manrope ">
+        <aside class="space-y-4 col-span-2 text-center  w-full ">
             <h1 class="font-extrabold text-3xl">Get In Touch</h1>
             <p>For inquiries and connection, reach out to our club via email or number as we look
                 forward to hearing from you!</p>
@@ -433,7 +440,7 @@
                 <p>(+62) 123-321-543</p>
             </div>
         </aside>
-        <nav class="flex-1  w-full">
+        <nav class="  w-full ">
             <header class="footer-title">Company</header>
             <a class="link link-hover">About us</a>
             <a class="link link-hover">Leadership</a>
@@ -441,7 +448,7 @@
             <a class="link link-hover">News & Article</a>
             <a class="link link-hover">Legal Notice</a>
         </nav>
-        <nav class="flex-1 w-full ">
+        <nav class=" w-full ">
             <header class="footer-title">Support</header>
             <a class="link link-hover">Help Center</a>
             <a class="link link-hover">FAQ</a>
@@ -449,7 +456,7 @@
             <a class="link link-hover">Contact us</a>
         </nav>
 
-        <nav class="flex-1 w-full ">
+        <nav class=" w-full  col-span-2">
             <header class="footer-title">Services</header>
             <a class="link link-hover">Academy</a>
             <a class="link link-hover">Group Lesson</a>
